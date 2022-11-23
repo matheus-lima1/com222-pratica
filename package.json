@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "sharp": "^0.31.2"
+  },
+  "name": "tutorial",
+  "version": "1.0.0",
+  "main": "optimize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "rm -rf node_modules/sharp && npm install --platform=linux --arch=x64 --target=8.10.0 sharp",
+    "deploy": "serverless deploy",
+    "postdeploy": "rm -rf node_modules/sharp && npm install sharp"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
